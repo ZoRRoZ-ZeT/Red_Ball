@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Block" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Block.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coin" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Coin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAEAAAAIAAIAAAABAAAgAAABAAAAAAAAA=</HashCode>
+      <FileName>Obstacle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spike" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Spike.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAiAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="window" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameMap" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <AssociationLine Name="player" Type="Player" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.938" Y="3.312" />
+        <Point X="10.938" Y="4.878" />
+        <Point X="9.25" Y="4.878" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.102" Y="-0.38" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="obstacles" Type="std::vector&lt;_Ty, _Alloc&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="2.838" />
+        <Point X="9.083" Y="2.838" Type="JumpStart" />
+        <Point X="8.917" Y="2.838" Type="JumpEnd" />
+        <Point X="8.312" Y="2.838" />
+        <Point X="8.312" Y="1.441" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAKAEAAgAAAAAAAAAAEIAAAAAAAAAAABABQAgAIAAAA=</HashCode>
+      <FileName>GameMap.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+      <Field Name="obstacles" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameWindow" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAMABAAAACAAAQ=</HashCode>
+      <FileName>GameWindow.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="states" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Button" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Button::button_states" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Button.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEYCAgAAAAQAgBAAAAAADAAAAAAAAABIABACCAAAFgA=</HashCode>
+      <FileName>Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entity" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAKQAEASAQIAAIBAAAGEAAwAAABAAAAAAAAA=</HashCode>
+      <FileName>Entity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <AssociationLine Name="obstacles" Type="std::vector&lt;_Ty, _Alloc&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="4.75" />
+        <Point X="9" Y="1.441" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.89" Y="0.102" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEQAAgAAAsAII0AAAAIIEAAAAAAAEAQAABABASIAABg=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="obstacles" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameState" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <AssociationLine Name="map" Type="GameMap" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="3.188" />
+        <Point X="8.917" Y="3.187" Type="JumpStart" />
+        <Point X="9.083" Y="3.188" Type="JumpEnd" />
+        <Point X="10.25" Y="3.188" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAA0AAAAAQAAAAAAAAAACAABAAAAAAIAE=</HashCode>
+      <FileName>GameState.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MainMenuState" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <InheritanceLine Type="State" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="6.75" />
+        <Point X="3" Y="4.066" />
+        <Point X="1.5" Y="4.066" />
+        <Point X="1.5" Y="3.691" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="quitBtn" Type="Button" FixedToPoint="true">
+      <Path>
+        <Point X="0.625" Y="3.691" />
+        <Point X="0.625" Y="6" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.796" Y="0.05" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="startBtn" Type="Button" FixedToPoint="true">
+      <Path>
+        <Point X="1" Y="3.691" />
+        <Point X="1" Y="6" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAAQAAAAAACAAAAAABAAAAABAAA=</HashCode>
+      <FileName>MainMenuState.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="quitBtn" />
+      <Field Name="startBtn" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="State" Collapsed="true">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYBAAAAAAAAAAAAEAAQAAAAAAAAAAAMABAhBAACAAA=</HashCode>
+      <FileName>State.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="states" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="std::stack&lt;_Ty, _Container&gt;" Collapsed="true">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAIgCAAAAAICAAQAIAAAAQAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\stack</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="std::vector&lt;_Ty, _Alloc&gt;" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUIAEIEqCrBsEEBAAOMIAAAyAAUEQBIAhQkwggAFUkI=</HashCode>
+      <FileName>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vector</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
